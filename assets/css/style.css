@@ -296,6 +296,7 @@ footer {
 /* start of media queries */
 
 @media screen and (min-width: 768px) {
+  /* media queries for medium devices */
   .common-css,
   nav,
   .nav-menu,
@@ -342,6 +343,8 @@ footer {
 }
 
 @media screen and (min-width: 992px) {
+  /* media queries for large devices */
+
   .common-css-padding {
     padding: 30px 20px;
   }
@@ -357,6 +360,8 @@ footer {
 }
 
 @media screen and (min-width: 1200px) {
+  /* media queries for extra large devices */
+
   .nav-menu {
     justify-content: flex-end;
     gap: 6rem;
