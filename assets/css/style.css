@@ -115,7 +115,7 @@ nav li a:hover:after {
 h1 {
   color: var(--textColor);
   font-size: 1.5rem;
-  line-height: 5vh;
+  line-height: 7vh;
 }
 
 .common-css-padding {
@@ -155,7 +155,7 @@ h1 {
 }
 
 .description {
-  line-height: 3vh;
+  line-height: 5vh;
   font-size: 1.1rem;
 }
 
@@ -237,13 +237,14 @@ h1 {
 .project-list li figcaption {
   position: absolute;
   bottom: 40px;
-  height: 10vh;
+  height: 16vh;
   background: var(--primaryColor);
   padding: 13px;
   font-size: 1rem;
   font-weight: bold;
-  line-height: 3vh;
+  line-height: 5vh;
   text-transform: uppercase;
+  z-index: 1;
 }
 
 /* start of Contact Section CSS */
@@ -374,7 +375,7 @@ footer {
   h1 {
     color: var(--textColor);
     font-size: 2rem;
-    line-height: 6vh;
+    line-height: 9vh;
   }
 
   .welcome-text p {
@@ -387,7 +388,7 @@ footer {
   }
 
   .description {
-    line-height: 4vh;
+    line-height: 6vh;
     font-size: 1.2rem;
   }
 
@@ -397,10 +398,9 @@ footer {
   }
 
   .project-list li figcaption {
-    height: 10vh;
+    /* height: 10vh; */
     font-size: 1rem;
-    line-height: 3vh;
-    z-index: 1;
+    /* line-height: 3vh; */
   }
 
   .contact {
