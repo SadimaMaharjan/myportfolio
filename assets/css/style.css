@@ -1,0 +1,405 @@
+:root {
+  /* set color for website using CSS variables */
+  /* declare a variable with */
+  --primaryColor: #ff9064;
+  --textColor: #fff;
+  --secondaryColor: #f8f8f8;
+  --contrastTextColor: #233554;
+}
+
+body {
+  background: var(--primaryColor);
+  font-family: "Open Sans", sans-serif;
+  color: var(--textColor);
+}
+
+a {
+  color: var(--textColor);
+  text-decoration: none;
+}
+
+/* Mobile First Responsive CSS style */
+
+/* Header CSS */
+
+header {
+  padding: 20px;
+}
+
+.common-css,
+nav,
+.nav-menu,
+.skill-list ul,
+.project-list,
+.projects,
+.contact {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo img {
+  width: 8rem;
+}
+
+.nav-menu,
+.skill-list ul,
+.contact {
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+nav li a {
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+}
+
+nav li a:hover {
+  border-bottom: 4px solid var(--textColor);
+  width: 0;
+  transition: 0.3s ease;
+}
+
+nav li a:hover:after {
+  content: " ";
+  position: absolute;
+  opacity: 1;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+#introduction {
+  background-color: var(--primaryColor);
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-pic {
+  width: 15rem;
+  border-radius: 100%;
+  position: relative;
+}
+
+.avatar {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.profile-pic:before {
+  content: " ";
+  position: absolute;
+  border: 5px solid var(--textColor);
+  border-radius: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transition-duration: 0.3s;
+  transition-property: top, right, bottom, left;
+}
+.profile-pic:hover:before {
+  top: -15px;
+  right: -15px;
+  bottom: -15px;
+  left: -15px;
+}
+
+h1 {
+  color: var(--textColor);
+  font-size: 1.5rem;
+  line-height: 5vh;
+}
+
+.common-css-padding {
+  padding: 20px 20px;
+}
+
+.welcome-text {
+  text-align: center;
+}
+
+.welcome-text p {
+  line-height: 4vh;
+  font-size: 1.1rem;
+}
+
+.name {
+  font-style: italic;
+}
+
+.sidebar {
+  width: 100%;
+  text-align: center;
+}
+
+/* start of About Section CSS */
+
+#about-me .sidebar,
+#about-me .description,
+#work .sidebar,
+#work .project-list {
+  background: var(--secondaryColor);
+  color: var(--contrastTextColor);
+}
+
+.section-title {
+  font-size: 1.5rem;
+}
+
+.description {
+  line-height: 3vh;
+  font-size: 1.1rem;
+}
+
+.description p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+/* start of Skills Section CSS */
+
+#skills .sidebar,
+#skills .skill-list {
+  background: var(--primaryColor);
+  color: var(--textColor);
+}
+
+#skills {
+  align-items: center;
+}
+
+.skill-list ul {
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.skill {
+  min-width: 10rem;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 1px solid var(--secondaryColor);
+  background: var(--secondaryColor);
+  color: var(--primaryColor);
+  box-shadow: 0px 10px 9px -2px rgba(237, 106, 19, 1);
+}
+
+/* start of Work Section CSS */
+
+.project-list img {
+  width: 100%;
+}
+
+.projects {
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+.project-list li {
+  flex: 1 1 45%;
+  position: relative;
+  border: 5px solid var(--primaryColor);
+}
+
+.project-list li::before {
+  content: " ";
+  background: var(--contrastTextColor);
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+}
+
+.project-list li:hover::before {
+  opacity: 0;
+}
+
+.project-list li:first-child {
+  flex: 2 1 auto;
+}
+
+.project-list li figcaption {
+  position: absolute;
+}
+
+.project-list li figcaption {
+  position: absolute;
+  bottom: 40px;
+  height: 10vh;
+  background: var(--primaryColor);
+  padding: 13px;
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 3vh;
+  text-transform: uppercase;
+}
+
+/* start of Contact Section CSS */
+
+.contact {
+  justify-content: flex-start;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.icon {
+  position: relative;
+  padding: 0 0 0 24px;
+}
+
+.icon::before {
+  font-family: FontAwesome;
+  position: absolute;
+  left: 0;
+}
+
+.phone::before {
+  content: " \f095";
+}
+
+.email::before {
+  content: "\f0e0";
+}
+
+.github::before {
+  content: "\f09b";
+}
+
+.linkedin::before {
+  content: "\f0e1";
+}
+
+/* start of Footer Section CSS */
+
+footer {
+  background-color: var(--secondaryColor);
+  color: var(--primaryColor);
+  text-align: center;
+}
+
+.footer-name {
+  color: var(--contrastTextColor);
+}
+
+/* start of media queries */
+
+@media screen and (min-width: 768px) {
+  .common-css,
+  nav,
+  .nav-menu,
+  .skill-list ul,
+  .project-list,
+  .projects,
+  .contact {
+    flex-direction: row;
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+
+  .nav-menu {
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  #introduction {
+    justify-content: flex-start;
+  }
+
+  .profile-pic {
+    width: 8rem;
+  }
+
+  .welcome-text {
+    text-align: left;
+  }
+
+  .sidebar {
+    width: 20%;
+    text-align: left;
+  }
+
+  .description,
+  .project-list,
+  .skill-list,
+  .contact {
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .common-css-padding {
+    padding: 30px 20px;
+  }
+
+  #introduction {
+    justify-content: space-evenly;
+    padding: 20px 20px 40px 20px;
+  }
+
+  .profile-pic {
+    width: 20rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-menu {
+    justify-content: flex-end;
+    gap: 6rem;
+  }
+
+  nav li a {
+    font-size: 1.2rem;
+  }
+
+  h1 {
+    color: var(--textColor);
+    font-size: 2rem;
+    line-height: 6vh;
+  }
+
+  .welcome-text p {
+    line-height: 6vh;
+    font-size: 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .description {
+    line-height: 4vh;
+    font-size: 1.2rem;
+  }
+
+  .skill-list ul {
+    justify-content: flex-start;
+    gap: 4rem;
+  }
+
+  .project-list li figcaption {
+    height: 10vh;
+    font-size: 1rem;
+    line-height: 3vh;
+  }
+
+  .contact {
+    justify-content: flex-start;
+    gap: 3rem;
+    font-size: 1.2rem;
+  }
+}

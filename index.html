@@ -3,17 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>My Portfolio Website</title>
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/css/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
   </head>
 
   <body>
     <header>
       <nav>
         <!-- Logo & Name -->
-        <h1 class="name">Sadima Maharjan</h1>
-        <ul>
+        <a href="#" class="logo"
+          ><img
+            src="./assets/images/logo.png"
+            alt="logo made with letters of a name"
+        /></a>
+        <ul class="nav-menu">
           <!-- Navigation -->
           <li><a href="#about-me">About Me</a></li>
           <li><a href="#work">Work</a></li>
@@ -23,69 +31,134 @@
       </nav>
     </header>
     <main>
-      <section id="header-image"></section>
-      <!-- About Me section -->
-      <section id="about-me">
-        <aside class="sidebar"><h2 class="section-title">About Me</h2></aside>
-        <section class="description">
+      <section id="introduction" class="common-css">
+        <section class="profile-pic common-css-padding">
+          <img
+            src="./assets/images/avatar.png"
+            class="avatar"
+            alt="avatar of a girl"
+          />
+        </section>
+        <section class="welcome-text common-css-padding">
+          <h1>
+            Hello there! I'm <span class="name">Sadima</span><br />
+            <span class="subtext">I love to build things for web</span>
+          </h1>
           <p>
-            orem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            I am an aspiring web developer who loves to bring bunch of code to
+            life.
           </p>
         </section>
       </section>
-      <!-- Work section -->
-      <section id="work">
-        <aside class="sidebar"><h2 class="section-title">Work</h2></aside>
-        <section class="project-list">
+
+      <!-- About Me section -->
+      <section id="about-me" class="common-css">
+        <aside class="sidebar common-css-padding">
+          <h2 class="section-title">About Me</h2>
+        </aside>
+        <section class="description common-css-padding">
+          <p>
+            Hi! I am Sadima and I love working in front-end web development. I
+            enjoy playing with colors, designs and various CSS and JavaScript
+            effects and animations.<br />
+          </p>
+          <p>
+            My interest in web development developed when I was working as an
+            intern for a company that developed Wordpress websites. I decided to
+            dive into web design after that and worked as a junior
+            web-designer.<br />
+          </p>
+          <p>Besides work, I love hiking, trekking and gardening.</p>
+        </section>
+      </section>
+      <!-- Skills section -->
+      <section id="skills" class="common-css">
+        <aside class="sidebar common-css-padding">
+          <h2 class="section-title">My Skills</h2>
+        </aside>
+        <section class="skill-list common-css-padding">
           <ul>
+            <li class="skill">HTML</li>
+            <li class="skill">CSS</li>
+            <li class="skill">JavaScript</li>
+            <li class="skill">Responsive Design</li>
+          </ul>
+        </section>
+      </section>
+      <!-- Work section -->
+      <section id="work" class="common-css">
+        <aside class="sidebar common-css-padding">
+          <h2 class="section-title">Work</h2>
+        </aside>
+        <section class="project-list common-css-padding">
+          <ul class="projects">
             <li>
               <a href="https://sadimamaharjan.github.io/first-landing-page/"
-                ><img src="./assets/images/first-landing-page.png" />First
-                Landing Page</a
-              >
+                ><img
+                  src="./assets/images/first-landing-page.png"
+                  alt=" Landing Page of a project"
+                />
+                <figcaption>
+                  Landing Page <br />
+                  HTML & CSS
+                </figcaption>
+              </a>
             </li>
             <li>
               <a href="https://sadimamaharjan.github.io/prework-study-guide/"
-                ><img src="./assets/images/prework-study-guide.png" />Prework
-                Study Guide</a
-              >
+                ><img
+                  src="./assets/images/prework-study-guide.png"
+                  alt="screenshot of prework project"
+                />
+                <figcaption>
+                  Study Guide <br />
+                  HTML & CSS
+                </figcaption>
+              </a>
             </li>
             <li>
               <a href="https://sadimamaharjan.github.io/css-mini-project/"
-                ><img src="./assets/images/css-mini-project.png" />CSS Mini
-                Project</a
-              >
+                ><img
+                  src="./assets/images/css-mini-project.png"
+                  alt="screenshot of CSS project"
+                />
+                <figcaption>
+                  Mini Project<br />
+                  HTML & CSS
+                </figcaption>
+              </a>
             </li>
           </ul>
         </section>
       </section>
       <!-- Contact section -->
-      <section id="contact-me">
-        <aside class="sidebar"><h2 class="section-title">Contact Me</h2></aside>
-        <ul class="contact">
-          <li><a href="#">555.555.5555</a></li>
-          <li>
+      <section id="contact-me" class="common-css">
+        <aside class="sidebar common-css-padding">
+          <h2 class="section-title">Contact Me</h2>
+        </aside>
+        <ul class="contact common-css-padding">
+          <li class="icon phone"><a href="tel:5555555555">555.555.5555</a></li>
+          <li class="icon email">
             <a href="mailto:npsadimamaharjan@gmail.com"
               >npsadimamaharjan@gmail.com</a
             >
           </li>
-          <li>
+          <li class="icon github">
             <a href="https://github.com/SadimaMaharjan/"
               >www.github.com/SadimaMaharjan/</a
             >
           </li>
-          <li><a href="#">Linkedin</a></li>
+          <li class="icon linkedin">
+            <a href="https://www.linkedin.com/in/sadima-maharjan/">Linkedin</a>
+          </li>
         </ul>
       </section>
     </main>
-    <footer></footer>
+    <footer class="common-css-padding">
+      <p>
+        Copyright ©2023 All rights reserved. Website made by
+        <strong class="footer-name">Sadima</strong>
+      </p>
+    </footer>
   </body>
 </html>
